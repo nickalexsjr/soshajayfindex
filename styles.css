@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f6f6f6;
+  color: #111;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  background: #000; /* Match new logo */
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  flex-wrap: wrap;
+}
+
+.navbar .logo {
+  height: 160px;
+}
+
+
+.navbar nav a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.navbar nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(to right, #000, #333);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero .profile-pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+/* Section styles */
+.section {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.section h2 {
+  margin-bottom: 15px;
+  color: #222;
+}
+
+/* Form & Button */
+form input, form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form button, .button {
+  background: #00e6a8;
+  color: #000;
+  font-weight: bold;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+}
+
+form button:hover, .button:hover {
+  background: #00cc96;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+}
+
+/* Confirmation */
+.confirmation {
+  margin-top: 10px;
+  color: green;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar nav {
+    margin-top: 20px;
+  }
+
+  .hero .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+
+  .navbar .logo {
