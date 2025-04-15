@@ -68,13 +68,20 @@ body {
 
 /* Form & Button */
 form input,
-form textarea {
+form textarea,
+form select {
   width: 100%;
   padding: 12px;
   margin-bottom: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
   font-size: 1em;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
 form button,
