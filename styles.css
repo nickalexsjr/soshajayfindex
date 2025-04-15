@@ -13,7 +13,7 @@ body {
 
 /* Navbar */
 .navbar {
-  background: #000; /* Match new logo */
+  background: #000;
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -25,7 +25,6 @@ body {
 .navbar .logo {
   height: 160px;
 }
-
 
 .navbar nav a {
   color: white;
@@ -68,15 +67,18 @@ body {
 }
 
 /* Form & Button */
-form input, form textarea {
+form input,
+form textarea {
   width: 100%;
   padding: 12px;
   margin-bottom: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
+  font-size: 1em;
 }
 
-form button, .button {
+form button,
+.button {
   background: #00e6a8;
   color: #000;
   font-weight: bold;
@@ -86,9 +88,11 @@ form button, .button {
   cursor: pointer;
   display: inline-block;
   text-decoration: none;
+  font-size: 1em;
 }
 
-form button:hover, .button:hover {
+form button:hover,
+.button:hover {
   background: #00cc96;
 }
 
@@ -108,13 +112,19 @@ th, td {
   text-align: left;
 }
 
-/* Footer */
-footer {
-  background: #111;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  font-size: 0.9em;
+/* Upload Section */
+#upload input[type="file"] {
+  padding: 12px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#upload p {
+  margin-bottom: 15px;
+  color: #333;
 }
 
 /* Confirmation */
@@ -122,6 +132,15 @@ footer {
   margin-top: 10px;
   color: green;
   font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
 }
 
 /* Responsive */
@@ -141,3 +160,19 @@ footer {
   }
 
   .navbar .logo {
+    height: 120px;
+  }
+
+  form input,
+  form textarea,
+  #upload input[type="file"] {
+    font-size: 1em;
+  }
+
+  form button,
+  .button {
+    width: 100%;
+    padding: 14px;
+    font-size: 1.1em;
+  }
+}
