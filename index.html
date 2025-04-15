@@ -56,12 +56,15 @@
   <section id="factfind" class="section">
     <h2>Fact Find Submission</h2>
     <form action="https://formspree.io/f/mblgbpje" method="POST">
-      <input type="text" name="fullName" placeholder="Full Name" required>
+      <label>Full Name:
+        <input type="text" name="fullName" required>
+      </label>
       <label>Date of Birth:
-  <input type="date" name="dob" required>
-</label>
-
-      <input type="tel" name="contact" placeholder="Contact Number" required>
+        <input type="date" name="dob" required>
+      </label>
+      <label>Contact Number:
+        <input type="tel" name="contact" required>
+      </label>
 
       <h3>Assets & Liabilities</h3>
       <table>
@@ -81,9 +84,14 @@
   <section id="upload" class="section">
     <h2>Upload Document</h2>
     <p>You can take a photo or upload a file directly below. This will be sent securely to our system.</p>
-    <form action="https://formspree.io/f/mzzeonzn" method="POST" enctype="multipart/form-data">
-      <input type="email" name="email" placeholder="Your email" required>
-      <input type="file" name="attachment" accept="image/*,.pdf,.doc,.docx,.xls,.xlsx" required>
+    <form action="https://getform.io/f/avrwqjra" method="POST" enctype="multipart/form-data">
+      <label>Your email:
+        <input type="email" name="email" required>
+      </label>
+      <label>Upload file:
+        <input type="file" name="file" accept="image/*,.pdf,.doc,.docx,.xls,.xlsx" required>
+      </label>
+      <input type="hidden" name="_gotcha" style="display:none !important">
       <button type="submit">Upload Document</button>
     </form>
   </section>
