@@ -19,6 +19,7 @@
       <a href="#book">Book Meeting</a>
       <a href="#contact">Contact</a>
       <a href="#factfind">Fact Find</a>
+      <a href="#upload">Upload Document</a>
     </nav>
   </header>
 
@@ -56,7 +57,10 @@
     <h2>Fact Find Submission</h2>
     <form action="https://formspree.io/f/mblgbpje" method="POST">
       <input type="text" name="fullName" placeholder="Full Name" required>
-      <input type="date" name="dob" placeholder="Date of Birth" required>
+      <label>Date of Birth:
+  <input type="date" name="dob" required>
+</label>
+
       <input type="tel" name="contact" placeholder="Contact Number" required>
 
       <h3>Assets & Liabilities</h3>
@@ -71,6 +75,16 @@
         <tr><td>Other</td><td><input type="text" name="other"></td><td><input type="checkbox" name="other_unsure"></td></tr>
       </table>
       <button type="submit">Submit Fact Find</button>
+    </form>
+  </section>
+
+  <section id="upload" class="section">
+    <h2>Upload Document</h2>
+    <p>You can take a photo or upload a file directly below. This will be sent securely to our system.</p>
+    <form action="https://formspree.io/f/mzzeonzn" method="POST" enctype="multipart/form-data">
+      <input type="email" name="email" placeholder="Your email" required>
+      <input type="file" name="attachment" accept="image/*,.pdf,.doc,.docx,.xls,.xlsx" required>
+      <button type="submit">Upload Document</button>
     </form>
   </section>
 
